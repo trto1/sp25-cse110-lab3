@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Introduction to HTML </title>
+    <meta charset="UTF-8">
+    <meta name="Course Title" content="CSE 110">
+    <link rel="icon" href="https://i.pinimg.com/564x/58/fa/14/58fa143b7ad3b7e4457dd65a1b9d7ee3.jpg">
+  </head>
+
+  <body>
+      
+
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#agendas">Agendas</a></li>
+          <li><a href="#tasks">Tasks</a></li>
+          <li><a href="#comments">Comments</a></li>
+        </ul>
+      </nav>
+      <hr/>
+      <h1>Card-Based Project - Team 09's First Meeting</h1>
+      <h2>April 15, 2025</h2>
+      <img src="https://skipaturn.com/wp-content/uploads/2014/04/20140402-175337.jpg" width="300"/>
+      <img src="https://images.pexels.com/photos/7256451/pexels-photo-7256451.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="150" />
+    </header>
+    
+    <main>
+      <h2>Attendance</h2>
+      <div>
+        <ul>
+          <li>Person A</li>
+          <li>Person B</li>
+          <li>Person C</li>
+          <li>Person D</li>
+          <li>Person E</li>
+        </ul>
+      </div>
+
+
+      <h2 id="agendas">Agendas</h2>
+      <ol>
+        <li>List out ideas and their pros vs cons</li>
+        <li>Narrow down the project range based on team's direction</li>
+        <li>Decide on a final idea and roughly plan out necessary tasks</li>
+      </ol>
+
+      <section id="tasks">
+        <h2>Tasks</h2>
+        <h3>Unfinished</h3>
+        <p>Nothing, our first meeting was just an introduction.</p>
+        <h3>New</h3>
+        <p>For the next meeting, we will need to talk about <b>organization tools</b>, create <i>expected deadlines</i>, as well as dividing up the tasks.</p>
+      </section>
+    </main>
+
+    <footer>
+      <h2 id="comments">Comments: <span>The agreed upon <strong>theme</strong> song is!!!</span></h2>
+      <em>Feel It - d4vd</em><br/>
+      Youtube Video:<video controls width="250" src="song.mp4"></video><br/>
+      Audio: <audio controls src="song.mp3"></audio>
+      <p><details>
+        <summary>Fun Fact</summary>
+        This song was the main theme of the show Invisible, season 2 episode 7.
+      </details></p>
+    </footer>
+
+    <h1>Input Types</h1>
+    <ol>
+      <li><form>
+        <fieldset>      
+          <legend>Please enter your name</legend>
+          <input type="text" id="name" /><br/>
+        </fieldset>
+      </form></li></br>
+
+      <li><form>
+        <legend>Check and say out loud:</legend>
+          <input type="checkbox"/>
+          Oo
+          <input type="checkbox"/>
+          Ee
+          <input type="checkbox"/>
+          Ii
+          <input type="checkbox"/>
+          Aa
+          <input type="checkbox"/>
+          Ee
+          <input type="checkbox"/>
+          Oo
+          <input type="checkbox"/>
+          Ee
+          <input type="checkbox"/>
+          Ii
+          <input type="checkbox"/>
+          Ee
+          <input type="checkbox"/>
+          Aa
+      </form></li></br>
+
+      <li><form>
+        <legend>What's your favorite language?</legend>
+          <input type="radio"/>
+          C
+          <input type="radio"/>
+          Python
+          <input type="radio"/>
+          Java
+      </form></li>
+      <textarea rows="5" cols="10">And why?</textarea></br></br>
+
+
+      <li><form>
+        <legend>GIVE ME YOUR BIRTHDATE</legend>
+        <input type="date"/>
+      </form></li></br>
+
+      <li>Here are some suggestions for fast foods, or type in your own:
+        <input list="brands"/>
+        <datalist id="brands">
+        <option value="McDonald's"></option>
+        <option value="KFC"></option>
+        <option value="Wendy's"></option>
+        <option value="Popeyes"></option>
+      </li></br>
+
+      <li> Ya like fruits? Then pick one
+        <select id="fruit" name="fruit">
+          <option value="apple">Apple</option>
+          <option value="banana">Banana</option>
+          <option value="orange">Orange</option>
+        </select>
+      </li></br>
+      
+      <li>
+        <button>Hey look I'm a clickable button!</button>
+      </li></br>
+    </ol>
+  </body>
+</html>
