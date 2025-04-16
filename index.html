@@ -59,23 +59,22 @@
       <em>Feel It - d4vd</em><br/>
       Youtube Video:<video controls width="250" src="song.mp4"></video><br/>
       Audio: <audio controls src="song.mp3"></audio>
-      <p><details>
+      <details>
         <summary>Fun Fact</summary>
         This song was the main theme of the show Invisible, season 2 episode 7.
-      </details></p>
+      </details>
     </footer>
 
     <h1>Input Types</h1>
-    <ol>
-      <li><form>
+      <form>
         <fieldset>      
           <legend>Please enter your name</legend>
           <input type="text" id="name" /><br/>
         </fieldset>
-      </form></li></br>
+      </form>
 
-      <li><form>
-        <legend>Check and say out loud:</legend>
+      <form>
+        Check and say out loud:
           <input type="checkbox"/>
           Oo
           <input type="checkbox"/>
@@ -96,45 +95,41 @@
           Ee
           <input type="checkbox"/>
           Aa
-      </form></li></br>
+      </form>
 
-      <li><form>
-        <legend>What's your favorite language?</legend>
+      <form>
+        What's your favorite language?
           <input type="radio"/>
           C
           <input type="radio"/>
           Python
           <input type="radio"/>
           Java
-      </form></li>
-      <textarea rows="5" cols="10">And why?</textarea></br></br>
+      </form>
+      <textarea rows="5" cols="10">And why?</textarea>
 
 
-      <li><form>
-        <legend>GIVE ME YOUR BIRTHDATE</legend>
+      <form>
+        GIVE ME YOUR BIRTHDATE
         <input type="date"/>
-      </form></li></br>
+      </form>
 
-      <li>Here are some suggestions for fast foods, or type in your own:
+      Here are some suggestions for fast foods, or type in your own:
         <input list="brands"/>
         <datalist id="brands">
         <option value="McDonald's"></option>
         <option value="KFC"></option>
         <option value="Wendy's"></option>
-        <option value="Popeyes"></option>
-      </li></br>
+        <option value="Popeyes"></option></datalist>
+      
 
-      <li> Ya like fruits? Then pick one
+      Ya like fruits? Then pick one
         <select id="fruit" name="fruit">
           <option value="apple">Apple</option>
           <option value="banana">Banana</option>
           <option value="orange">Orange</option>
         </select>
-      </li></br>
       
-      <li>
         <button>Hey look I'm a clickable button!</button>
-      </li></br>
-    </ol>
   </body>
 </html>
