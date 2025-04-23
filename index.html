@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title> Introduction to HTML </title>
+    <title> Lab 3 - Introduction to CSS </title>
     <meta charset="UTF-8">
     <meta name="Course Title" content="CSE 110">
     <link rel="icon" href="https://i.pinimg.com/564x/58/fa/14/58fa143b7ad3b7e4457dd65a1b9d7ee3.jpg">
   </head>
 
   <body>
-      
-
     <header>
       <nav>
         <ul>
@@ -18,11 +16,12 @@
           <li><a href="#comments">Comments</a></li>
         </ul>
       </nav>
-      <hr/>
-      <h1>Card-Based Project - Team 09's First Meeting</h1>
+      <hr>
+
+      <h1>The History of Pokémon</h1>
       <h2>April 15, 2025</h2>
-      <img src="https://skipaturn.com/wp-content/uploads/2014/04/20140402-175337.jpg" width="300" alt="Cards"/>
-      <img src="https://images.pexels.com/photos/7256451/pexels-photo-7256451.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="150" alt="Whiteboard"/>
+      <img src="https://i.etsystatic.com/35623755/r/il/f8fb26/3856903076/il_fullxfull.3856903076_llae.jpg" width="300" alt="Cards">
+      <img src="https://preview.redd.it/i-drew-all-156-gen-5-pokemon-v0-u0otoit2mhwd1.png?width=640&crop=smart&auto=webp&s=6f1aaf19f10b4775c1e92eaec40b3519739e6b27" width="200" alt="Whiteboard">
     </header>
     
     <main>
@@ -33,103 +32,96 @@
           <li>Person B</li>
           <li>Person C</li>
           <li>Person D</li>
-          <li>Person E</li>
         </ul>
       </div>
 
 
       <h2 id="agendas">Agendas</h2>
       <ol>
-        <li>List out ideas and their pros vs cons</li>
-        <li>Narrow down the project range based on team's direction</li>
-        <li>Decide on a final idea and roughly plan out necessary tasks</li>
+        <li>Learn about the creation and popularization of Pokemon</li>
+        <li>Choose your Gen 1 starter <b>(must!)</b></li>
+        <li>Try out Pokemon Red/Blue
       </ol>
 
       <section id="tasks">
         <h2>Tasks</h2>
         <h3>Unfinished</h3>
-        <p>Nothing, our first meeting was just an introduction.</p>
+        <p>We ran out of time for all members to try out the game.</p>
         <h3>New</h3>
-        <p>For the next meeting, we will need to talk about <b>organization tools</b>, create <i>expected deadlines</i>, as well as dividing up the tasks.</p>
+        <p>Next meeting, we can dip our toes in <strong>Indigo League</strong>, the  <i>first season</i> of Pokémon containing 52 original episodes that helped to popularize the franchise in Western countries.</p>
       </section>
     </main>
-
-    <footer>
-      <h2 id="comments">Comments: <span>The agreed upon <strong>theme</strong> song is!!!</span></h2>
-      <em>Feel It - d4vd</em><br/>
-      Youtube Video:<video controls width="250" src="song.mp4"></video><br/>
-      Audio: <audio controls src="song.mp3"></audio>
-      <details>
-        <summary>Fun Fact</summary>
-        This song was the main theme of the show Invisible, season 2 episode 7.
-      </details>
-    </footer>
 
     <h1>Input Types</h1>
       <form>
         <fieldset>      
-          <legend>Please enter your name</legend>
-          <input type="text" id="name" /><br/>
+          <legend>Enter your trainer name</legend>
+          <input type="text" id="name"><br>
         </fieldset>
-      </form>
+      </form><br>
 
       <form>
-        Check and say out loud:
-          <input type="checkbox"/>
-          Oo
-          <input type="checkbox"/>
-          Ee
-          <input type="checkbox"/>
-          Ii
-          <input type="checkbox"/>
-          Aa
-          <input type="checkbox"/>
-          Ee
-          <input type="checkbox"/>
-          Oo
-          <input type="checkbox"/>
-          Ee
-          <input type="checkbox"/>
-          Ii
-          <input type="checkbox"/>
-          Ee
-          <input type="checkbox"/>
-          Aa
-      </form>
+        Check media forms of Pokémon that you have experienced:
+          <input type="checkbox">
+          Games
+          <input type="checkbox">
+          Trading Cards
+          <input type="checkbox">
+          Mangas
+          <input type="checkbox">
+          Anime          
+      </form><br>
 
       <form>
-        What's your favorite language?
-          <input type="radio"/>
-          C
-          <input type="radio"/>
-          Python
-          <input type="radio"/>
-          Java
-      </form>
-      <textarea rows="5" cols="10">And why?</textarea>
-
+        This is <strong>very important</strong>. Which one is your favorite Gen 1 starter?
+          <input type="radio">
+          Bulbasaur
+          <input type="radio">
+          Charizard
+          <input type="radio">
+          Squirtle
+      </form><br>
+      <!-- Potentially adding their moving images here-->
+      <label for="reasons">Congrats on picking your first Pokémon!! Any specific reasons?</label><br>
+      <textarea id="reasons" rows="5" cols="30"></textarea>
 
       <form>
-        GIVE ME YOUR BIRTHDATE
-        <input type="date"/>
-      </form>
+        You can also give it a birthdate:
+        <input type="date">
+      </form><br>
 
-      Here are some suggestions for fast foods, or type in your own:
-        <input list="brands"/>
-        <datalist id="brands">
-        <option value="McDonald's"></option>
-        <option value="KFC"></option>
+      Suggestions for foods at the next meeting (you can also type in):
+      <datalist id="brands">
+        <option value="McDonald"></option>
         <option value="Wendy's"></option>
-        <option value="Popeyes"></option></datalist>
+        <option value="Popeyes"></option>
+      </datalist><br>
       
+      Pick a drink
+        <select id="fruit">
+          <option value="Coke">Coke</option>
+          <option value="Diet Coke">Diet Coke</option>
+          <option value="Sprite">Sprite</option>
+          <option value="Orange Fanta">Orange Fanta</option>
+        </select><br>
+      
+        <button>Click me to submit your choices!</button>
 
-      Ya like fruits? Then pick one
-        <select id="fruit" name="fruit">
-          <option value="apple">Apple</option>
-          <option value="banana">Banana</option>
-          <option value="orange">Orange</option>
-        </select>
-      
-        <button>Hey look I'm a clickable button!</button>
+
+        <footer>
+          <h2 id="Extras">Extras: <span><em>The opening theme song of Indigo League</em></span></h2>
+          
+          Youtube Video: <br>
+          <video controls width="200" src="extSrcs/songVideo.mp4"></video><br>
+          Audio: <br>
+          <audio controls src="extSrcs/songAudio.mp3"></audio>
+          <details>
+            <summary>Fun Fact</summary>
+            "Gotta Catch 'Em All" is the title of this theme song, and this is also where the catchphrase is first popularized.
+          </details>
+        </footer>
+    
   </body>
+
+
 </html>
