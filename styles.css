@@ -1,0 +1,124 @@
+/* Welcome to CSS */
+
+.tagesschrift-regular {
+    font-family: "Tagesschrift", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    font-size: 20px;
+    font-family: "Tagesschrift", system-ui, sans-serif;
+}
+
+body {
+    background-color: rgb(220, 220, 220);
+}
+
+h1 {
+    font-style: normal;
+    color: color(srgb 1 0 0);
+    font-size: 2rem;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 10px;
+}
+
+h2 {
+    color: color-mix(in lab, orange 90%, pink 40%);
+    position: static;
+}
+
+a {
+    display: block;
+    color: greenyellow;
+    color: hsl(108, 72%, 30%);
+    text-decoration-thickness: 2px;
+}
+
+a:hover {
+    color: blue;
+}
+
+header {
+    margin: 0 0 10mm 0;
+}
+
+#firstBreakLn {
+    border-width: 1mm;
+    border-style: solid;
+    border-color: #910000;
+}
+
+#card, #art {
+    border: 0.1cm solid;
+    padding: 4px;
+    margin-right: 1em;
+}
+.imgs {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+video {
+    border: 5px solid #ffcc00;
+    border-radius: 10px;
+    padding-bottom: 0.1px;
+    width: 50vw;
+}
+
+
+textarea {
+    margin-bottom: 1rem;
+    width: 6cm;
+    height: 3cm;
+    max-width: 100cm;
+    min-width: 1cm;
+}
+
+button {
+    width: 6cm;
+    height: 2em;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+button:active {
+    background-color: red;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    gap: 4cm;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat (2, 1fr);
+}
+
+.starters {
+    display: grid;
+    place-self: center;
+}
+
+.pokemon {
+    display: grid;
+    place-self: center;
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+      grid-template-columns: 1fr; /* stack the starters vertically */
+    }
+}
+
+
+
+
+
