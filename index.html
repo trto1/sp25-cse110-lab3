@@ -4,30 +4,36 @@
     <title> Lab 3 - Introduction to CSS </title>
     <meta charset="UTF-8">
     <meta name="Course Title" content="CSE 110">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap" rel="stylesheet">
     <link rel="icon" href="https://i.pinimg.com/564x/58/fa/14/58fa143b7ad3b7e4457dd65a1b9d7ee3.jpg">
+    <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
     <header>
-      <nav>
-        <ul>
+      <nav id="navMenu">
+        <ul >
           <li><a href="#agendas">Agendas</a></li>
           <li><a href="#tasks">Tasks</a></li>
           <li><a href="#comments">Comments</a></li>
         </ul>
       </nav>
-      <hr>
+      <hr id="firstBreakLn">
 
-      <h1>The History of Pokémon</h1>
-      <h2>April 15, 2025</h2>
-      <img src="https://i.etsystatic.com/35623755/r/il/f8fb26/3856903076/il_fullxfull.3856903076_llae.jpg" width="300" alt="Cards">
-      <img src="https://preview.redd.it/i-drew-all-156-gen-5-pokemon-v0-u0otoit2mhwd1.png?width=640&crop=smart&auto=webp&s=6f1aaf19f10b4775c1e92eaec40b3519739e6b27" width="200" alt="Whiteboard">
+      <h1 id="webTitle">The History of Pokémon</h1>
     </header>
     
     <main>
-      <h2>Attendance</h2>
+      <h2 id="date">April 15, 2025</h2>
+      <div class="imgs">
+        <img id="cards" src="https://i.etsystatic.com/35623755/r/il/f8fb26/3856903076/il_fullxfull.3856903076_llae.jpg" width="300" alt="Cards">
+        <img id="art" src="https://preview.redd.it/i-drew-all-156-gen-5-pokemon-v0-u0otoit2mhwd1.png?width=640&crop=smart&auto=webp&s=6f1aaf19f10b4775c1e92eaec40b3519739e6b27" width="200" alt="Whiteboard">
+      </div>
+      <h2 id="people">Attendance</h2>
       <div>
-        <ul>
+        <ul class="flex-container">
           <li>Person A</li>
           <li>Person B</li>
           <li>Person C</li>
@@ -43,8 +49,8 @@
         <li>Try out Pokemon Red/Blue
       </ol>
 
-      <section id="tasks">
-        <h2>Tasks</h2>
+      <section  >
+        <h2 id="tasks">Tasks</h2>
         <h3>Unfinished</h3>
         <p>We ran out of time for all members to try out the game.</p>
         <h3>New</h3>
@@ -52,7 +58,7 @@
       </section>
     </main>
 
-    <h1>Input Types</h1>
+    <h2>Input Types</h2>
       <form>
         <fieldset>      
           <legend>Enter your trainer name</legend>
@@ -74,12 +80,29 @@
 
       <form>
         This is <strong>very important</strong>. Which one is your favorite Gen 1 starter?
-          <input type="radio">
-          Bulbasaur
-          <input type="radio">
-          Charizard
-          <input type="radio">
-          Squirtle
+          <div class="grid">
+            <div class="starters">
+              <label>
+                <input class="item" type="radio">
+                Bulbasaur
+              </label>
+              <img class="pokemon" src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/001.png">
+            </div>
+            <div class="starters">
+              <label>
+                <input class="item" type="radio">
+                Charizard
+                <img class="pokemon" src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/004.png">
+              </label>
+            </div>
+            <div class="starters"> 
+              <label>
+                <input class="item" type="radio">
+                Squirtle
+              </label>
+              <img class="pokemon" src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/007.png">
+            </div>
+          </div>
       </form><br>
       <!-- Potentially adding their moving images here-->
       <label for="reasons">Congrats on picking your first Pokémon!! Any specific reasons?</label><br>
@@ -91,14 +114,15 @@
       </form><br>
 
       Suggestions for foods at the next meeting (you can also type in):
-      <datalist id="brands">
-        <option value="McDonald"></option>
-        <option value="Wendy's"></option>
-        <option value="Popeyes"></option>
-      </datalist><br>
+      <input list="brands">
+        <datalist id="brands">
+          <option value="McDonald"></option>
+          <option value="Wendy's"></option>
+          <option value="Popeyes"></option>
+        </datalist><br>
       
-      Pick a drink
-        <select id="fruit">
+      <br>Pick a drink
+        <select id="drinks">
           <option value="Coke">Coke</option>
           <option value="Diet Coke">Diet Coke</option>
           <option value="Sprite">Sprite</option>
